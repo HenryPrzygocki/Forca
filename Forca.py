@@ -1,3 +1,6 @@
+import sys
+
+
 palavra = input("Qual a palavra? ").lower()
 print(chr(27) + "[2J")
 n = len(palavra)
@@ -38,7 +41,7 @@ while(erros < errrmax):
             if("".join(map(str, d))== palavra):
                 print("Voce acertou! A palavra era: ")
                 print(' '.join(map(str, d)))
-                exit()             
+                sys.exit()             
         else:
             erros += 1
             print(chr(27) + "[2J")
@@ -46,7 +49,7 @@ while(erros < errrmax):
             if(erros == errrmax):
                 print("Perdeu! A palavra era: ")
                 print(palavra)
-                exit()
+                sys.exit()
         print("Letras já escolhidas: ")
         w.sort()
         print(' '.join(map(str,w)))
