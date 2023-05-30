@@ -10,7 +10,7 @@ for i in range(0,n):
         d.append("_")
     else:
         d.append(palavra[i])
-        
+
 w = []
 print(' '.join(map(str, d)))
 rep = 1
@@ -56,4 +56,4 @@ while(erros < errrmax):
         print(' '.join(map(str, d)))
 
 
-        
+
